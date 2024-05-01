@@ -44,15 +44,13 @@ const Login = () => {
       const userType = response.data.usertype; // Assuming the server returns the user's usertype
 
       if (userType === "admin") {
-        alert("admin login successful");
+        alert("Admin login successful");
 
-        navigate("/admindashboard");
+        navigate("/dashboard");
         toast.success("Admin successfully logged in!");
       } else {
         alert("invalid admin details");
       }
-
-      // Show success toast notification
     } catch (error) {
       toast.error("Admin login failed:", error);
 
@@ -85,15 +83,15 @@ const Login = () => {
       localStorage.setItem("token", token);
 
       if (userType === "user") {
-        alert("user login successful");
+        alert("User login successful");
 
         navigate("/dashboard");
-        toast.success("user successfully logged in!");
+        toast.success("User successfully logged in!");
       } else {
         alert("invalid user details");
       }
     } catch (error) {
-      toast.error("user login failed:", error);
+      toast.error("User login failed:", error);
 
       if (error.response && error.response.status === 401) {
         toast.error("User login failed. Please check your email and password.");

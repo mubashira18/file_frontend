@@ -27,14 +27,14 @@ const Menubar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/"
+              to="/services"
               style={{ fontSize: "18px", marginRight: "10px" }}
               className="nav-link"
             >
               Services
             </NavLink>
             <NavLink
-              to="/"
+              to="/contactus"
               style={{ fontSize: "18px", marginRight: "10px" }}
               className="nav-link"
             >

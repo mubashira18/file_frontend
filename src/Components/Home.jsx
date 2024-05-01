@@ -21,8 +21,8 @@ const Home = () => {
         <p className="homingwelcome">
           Welcome to SVU file tracking system, keep moniter here.
         </p>
-        <Link to="/login">
-          <button className="book-button" onClick={notify}>
+        <Link to="/login" className="pt-4">
+          <button className="book-button " onClick={notify}>
             Track Here
           </button>
         </Link>

@@ -7,6 +7,9 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import FileTrack from "./FileTrack";
 import Protect from "./Protect";
+import Services from "./Services";
+import Eachservice from "./Eachservice";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
+          <Route path="/contactus" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:userId" element={<Eachservice />} />
         </Route>
         <Route
           path="/dashboard/*"
